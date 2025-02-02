@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background: #191f36;
+            color:black;
+        }
+        .about-me{
+            background-color:lightslategray;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            margin-left: 250px;
+            margin-right: 250px;
+            padding:10px 20px ;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 50px;
+            box-shadow: inset;
+
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #more-text {
+            display: none;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hello! I’m a passionate front-end developer with a love for creating clean, responsive, and user-friendly web applications.<br>
+            I’m a final-year Computer Science student pursuing a B.Tech degree. Throughout my academic journey, 
+                I've cultivated a deep passion for technology, coding, and problem-solving. My interests are broad, but I’m particularly drawn to 
+                software development, data structures, and algorithms. I find immense satisfaction in creating efficient, user-centric solutions that 
+                simplify everyday tasks.<br>
+
+                Professionally, I am always on the lookout for opportunities to learn and grow. I’ve gained experience in programming languages such as 
+                Python, Java, and C++, and I'm constantly exploring new technologies to stay ahead of the curve. I have a strong foundation in 
+                computer science principles and thrive on solving complex technical problems.<br><br>
+                
+                Beyond my studies, I am an enthusiastic team player who enjoys collaborating with others on projects and participating in hackathons.
+                 I believe in continuous learning, both through formal education and hands-on experience.<br> I enjoy tackling challenges head-on and am 
+                 always motivated to push the boundaries of what's possible.<br>
+                
+                Outside of tech, I’m someone who values balance and personal growth. In my free time, I enjoy [insert personal hobbies or interests here, 
+                like reading, sports, gaming, music, etc.]. This allows me to recharge and stay creative, fueling my professional passion with fresh perspectives.<br>
+                
+                I’m excited about the opportunities that lie ahead and am eager to contribute my skills to impactful projects. If you’re looking for a dedicated and 
+                adaptable individual with a passion for tech, I’d love to connect!.
+        </p>
+        <a href="index.html" class="btn">Back</a>
+    </div>
+
+    <script>
+        document.getElementById('read-more-btn').addEventListener('click', function() {
+            var moreText = document.getElementById('more-text');
+            var btnText = document.getElementById('read-more-btn');
+            
+            if (moreText.style.display === 'none') {
+                moreText.style.display = 'inline';
+                btnText.innerHTML = 'Read Less';
+            } else {
+                moreText.style.display = 'none';
+                btnText.innerHTML = 'Read More';
+            }
+        });
+    </script>
+</body>
+</html>
